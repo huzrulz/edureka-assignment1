@@ -2,11 +2,12 @@ package com.library.edurekaproj.repositories;
 
 import java.util.List;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import demo.jpa.boot.spring.entities.Author;
 
-public interface AuthorRepository extends CrudRepository<Author, Long>{
+import com.library.edurekaproj.entity.Author;
+
+public interface AuthorRepository extends JpaRepository<Author, Long>{
 
 
 }

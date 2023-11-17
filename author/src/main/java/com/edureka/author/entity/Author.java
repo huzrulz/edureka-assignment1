@@ -1,4 +1,4 @@
-package com.library.edurekaproj.entity;
+package com.edureka.author.entity;
 
 import java.util.List;
 
@@ -24,9 +24,6 @@ public class Author {
 
     @Column(name ="description")
     private String description;
-
-    @OneToMany(mappedBy = "author")
-    private List<Book> books;
     
     public Author() {
         
@@ -59,5 +56,7 @@ public class Author {
       public void setDescription(String description) {
         this.description = description;
       }
-  
+
+
+   
 }
